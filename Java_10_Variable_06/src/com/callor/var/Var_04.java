@@ -4,7 +4,6 @@ public class Var_04 {
 	
 	public static void main(String[] args) {
 		
-		
 		int intNum1 = (int)(Math.random() * 100 ) + 1;
 		int intNum2 = (int)(Math.random() * 100 ) + 1;
 		
@@ -27,17 +26,10 @@ public class Var_04 {
 					           +" 보다 크지 않다. "
 					);
 			
-			
-			
-		}
-			
+			}
 			
 		} 
 		
-		
-		
-		
-		
-	}
+}
 
 
