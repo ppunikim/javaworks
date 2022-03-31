@@ -25,7 +25,7 @@ public class Method_02 {
 		return 100.0;
 	}
 	public static long longNum() {
-		return 120 * 10^10L;
+		return 120 * 1000000000000000000L;
 	}
 	public static float floatNum() {
 		return 100.0f;
