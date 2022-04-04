@@ -54,4 +54,4 @@ public float num2() {
 * return type void인 경우는 return 명령문을 단독으로 사용된다.
 * return type void인 경우, 특별한 때가 아니면 return을 사용하지 않아도 된다.
 * return type void 이외의 경우 반드시 return명령이 있어야 하고, return type과 같은 데이터를 포함해야 한다.
-* 처음 method를 선언할 때 숫자인 경우에는 return 0; , 문자열인 경우 return ""; 또는 return null; 을 사용한다. boolean 인 경우는 보통 return false; 를 사용한다.
+* 처음 method를 선언할 때 숫자인 경우에는 return 0; , 문자열인 경우 ```return "";``` 또는 ```return null;``` 을 사용한다. boolean 인 경우는 보통 ```return false;``` 를 사용한다.
