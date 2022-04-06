@@ -1,6 +1,6 @@
 package com.callor.controller.op;
 
-public class Cascading_01 {
+public class CastingEx01 {
 	public static void main(String[] args) {
 		
 		
