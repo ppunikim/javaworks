@@ -36,11 +36,6 @@ public class ScannerEx_01 {
 		inputStr = scan.nextLine(); //nextLine은 scan이라는 class에 선언된 것이다.
 		System.out.println("inputStr 값: " + inputStr);
 		
-		
-		
-		
-		
-		
 	}
 
 }

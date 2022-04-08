@@ -12,7 +12,6 @@ public class RandomEx_01 {
 		System.out.println(intRnd2);
 		
 		
-		
 		long longRnd = rnd.nextLong();
 		double douRnd = rnd.nextDouble();
 		System.out.println(douRnd);
@@ -23,12 +22,7 @@ public class RandomEx_01 {
 		}  else {
 			System.out.println("false값 만듦");
 		}
- 		
-		
-		
-		
-		
-		
+ 			
 	}
 
 }
