@@ -1,7 +1,8 @@
 package com.callor.arrays;
 
 /*
- * Ctrl + o : import 최적화(필요한 클래스는 import, 필요없는 항목은 제거)
+ * Ctrl + shift + o : import 최적화(필요한 클래스는 import, 
+ * 									필요없는 항목은 제거)
  */
 public class ArraysV1 {
 	
@@ -14,7 +15,8 @@ public class ArraysV1 {
 		/*
 		 *	정수형 배열 intNums를 선언하고 , 공간 10개를 확보해라
 		 *	정수형 배열 10개짜리 intNums를 생성하라
-		 *	정수형 배열 intNums에는 정수를 10개 저장할 수 있는 저장 공간이 생성된다. 
+		 *	정수형 배열 intNums에는 정수를 10개 저장할 수 있는 저장 공간이 
+		 *														생성된다. 
 		 *	intNums 배열의 10개 저장소는 0으로 clear 된 상태로 시작
 		 */
 		int[] intNums = new int[10];
@@ -44,6 +46,7 @@ public class ArraysV1 {
 		
 		
 		// intNums 에 저장된 값을 문자열로 바꿔 println() 에 전달하고 console에 출력하라
+		// toString 은 주소값을 출력하는 것이다.
 		System.out.println(intNums.toString());
 		/*
 		 * print() method는 ()안의 데이터 타입에 따라 작동하는 방식이 다르다.
