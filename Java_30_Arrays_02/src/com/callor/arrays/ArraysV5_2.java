@@ -26,9 +26,9 @@ public class ArraysV5_2 {
 								 //그러면 맨 처음에 한개 쓰고 띄어써지니까
 								 //i+1 을 한다.
 				System.out.println();
-			}
+			}//end if
 
-		}
+		}//end for
 		
 		}//end main
 
