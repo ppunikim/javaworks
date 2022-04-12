@@ -21,4 +21,22 @@ public class ExecV1 {
 		 * 것보다 if가 아니다. 라고 표현하는 것이 맞다. System.out.println(" 짝수가 아니다."); }
 		 */
 	}// end main
+
+	
+	/*
+	 * void type의 print method
+	 */
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	/*
+	 * return type이 정수형인 sum method 선언문
+	 */
+	public int sum() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }// end class

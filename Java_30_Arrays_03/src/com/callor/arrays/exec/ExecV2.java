@@ -7,6 +7,13 @@ public class ExecV2 {
 		
 		// new 는 배열선언
 		int[] intNum = new int[100]; // intNum라는 100층 아파트 기획
+		
+		/*
+		 * for()명령문의 선언부에서 변수를 선언
+		 * for() {} 이 끝날때 변수가 소멸된다.
+		 * 그러므로 같은 method내에서 같은 이름의 변수를 계속 사용할 수 있다.
+		 * 
+		 */
 		for (int i = 1; i < intNum.length; i++) {
 			intNum[i] = (int) (Math.random() * 100) + 1; //inNum[i]라는 데이터 저장공간에 랜덤값 담기
 		}//임의의 수를 담은 배열 만듦.
@@ -22,7 +29,7 @@ public class ExecV2 {
 			} // 임의의 값이 짝수인지 아닌지 판별
 		
 
-		}
+		}//end for
 
 	}// end main
 }// end class

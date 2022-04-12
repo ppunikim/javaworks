@@ -4,7 +4,7 @@ public class ExecV4 {
 	public static void main(String[] args) {
 		int[] intNum = new int[100];
 		
-		for (int i = 1; i < intNum.length; i++) {
+		for (int i = 0; i < intNum.length; i++) {
 			intNum[i] = (int) (Math.random() * 100) + 1;
 		} // end for , 랜덤값을 intNum[]에 저장해 위 intNum에 저장된다.
 		  // 그리고 이 for문은 효과가 사라짐
