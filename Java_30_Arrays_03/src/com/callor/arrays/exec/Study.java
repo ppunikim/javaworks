@@ -3,6 +3,7 @@ package com.callor.arrays.exec;
 
 public class Study {
 	public static void main(String[] args) {
+		
 		int[] intNum = new int[100];
 		for(int i=0; i<intNum.length; i++) {
 			intNum[i] = (int)(Math.random()*100)+1;
@@ -13,10 +14,12 @@ public class Study {
 		for(int i=0; i<intNum.length; i++) {
 			boolean bEven = (intNum[i] % 2 == 0);
 			if(bEven == true) {
+				// 짝수의 갯수를 새는 것
 				intEvenNum++;
-			}
-			System.out.println(intEvenNum);
-		}
+			}// end if
+		}//end for
+		System.out.println(intEvenNum);
+		
 		System.out.println("================================");
 		
 		//각 배열에 저장된 짝수의 값을 모두 더한 것은 얼마?
@@ -25,9 +28,10 @@ public class Study {
 			boolean bEven = (intNum[i] % 2 == 0);
 			if(bEven == true) {
 				intEvenSum += intNum[i];
-			}
-			System.out.println(intEvenSum);
-		}
+			}//end if
+		}//end for
+		System.out.println(intEvenSum);
+		
 	}//end main
 	
 }//end class
