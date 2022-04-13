@@ -5,6 +5,10 @@ import com.callor.arrays.utils.Line;
 public class ScoreServiceV2 {
 	
 	//클래스 영역에 선언된 변수
+	/*
+	 * ScoreServiceV1클래스에 선언된 모든 method에서
+	 * 변수에 접근(읽고,쓰기)할 수 있다.
+	 */
 	int[] intKor; //배열은 선언만 한 상태에서 저장이 안된다.
 	/*
 	 * 없어도 되는, 생략된 
@@ -21,6 +25,11 @@ public class ScoreServiceV2 {
 		}
 	}
 	public void printScore() {
+		/*
+		 * line 클래스에 static으로 선언된 dLine()에게
+		 * 정수값을 전달하고, 정수개수만큼 라인문자열을
+		 * return받는다.
+		 */
 		System.out.println(Line.dLine(50));
 		System.out.println("국어 성적 열람표");
 		System.out.println(Line.sLine(50));
