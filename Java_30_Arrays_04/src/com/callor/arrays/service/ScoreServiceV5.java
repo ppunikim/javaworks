@@ -31,21 +31,20 @@ public class ScoreServiceV5 {
 	public void PrintScore() {
 		System.out.println(Line.dLine);
 		for(int i=0; i<intKor.length; i++) {
-			System.out.printf("%d : %d\t\t " ,i+1,intKor[i]);
+			System.out.printf("%d:%d\t\t " ,(i+1),intKor[i]);
 			if( (i+1) % 5 == 0 ) {
 				System.out.println();
 			}
 		}
 	}//end PrintScore
 	
-	public int intSumScore() {
+	public void intSumScore() {
 		System.out.println(Line.sLine);
 		int intSum = 0;
 		for(int i = 0; i< intKor.length; i++) {
 			intSum += intKor[i];
 		}
 		System.out.printf("총점은: %d " , intSum);
-		return intSum;
 	}
 	
 	
