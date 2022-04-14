@@ -23,7 +23,6 @@ public class StudentServiceV2 extends StudentServiceV1 {
 	 * Override(재 정의) 
 	 * ServiceV1에 선언된 메서드 중, 나머지는 그대로 쓰고,
 	 * inputStudent 메서드는 내가 원하는 코드로 바꿔서 다시 사용하겠다.
-	 * 이것은 
 	 */
 	@Override
 	public int inputStudent() {
@@ -52,19 +51,18 @@ public class StudentServiceV2 extends StudentServiceV1 {
 			System.out.println("입력을 모두 마쳤습니다.");
 		}
 		
-/*		부등호는 같이 사용하는 것은 좋지 않다.
+/*		부등호는 같이 사용(<=, =>)하는 것은 좋지 않다.
  * 			 그 이유는 잘못해서 등호를 쓰지 않은 오류를 낼 수 있기 때문에		
 		if(index >= strStudents.length) {
-			System.out.println("입력이 중단되었습니다.");
+			System.out.println("입력을 모두 마쳤습니다.입력이 중단되었습니다.");
 		} else {
-			System.out.println("입력을 모두 마쳤습니다.");
+			System.out.println("입력이 중단되었습니다.");
 		}
-*/		
-		/*
-		 * 
-		 */
-//		System.out.println("index" + index);
-//		System.out.println("종료");
+		
+		System.out.println("index" + index);
+		System.out.println("종료");
+ */		
+		
 		return 0;
 	}
 	

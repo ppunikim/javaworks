@@ -11,7 +11,7 @@ public class StringEx1 {
 		 * 때문에 문자열형 변수에 저장된 문자열을 EQ(==) 비교를 하는 
 		 * 것은 매우 위험한 코드가 될 수 있다.
 		 * 
-		 * 문자열형 변수는 절대 EQ(==)또는 Not EQ(!=)  를 사용하여 비교x.
+		 * 문자열형 변수는 절대 EQ(==)또는 Not EQ(!=)를 사용하여 비교하지 않는다.
 		 */
 		String strNation = "KOREA";
 		System.out.println(strNation == "KOREA");
