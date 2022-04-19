@@ -56,23 +56,15 @@ public class ScoreServiceV1 {
 			System.out.printf("%3.2f\n", scores[i].getfAvg() );
 		}
 		int resultKor = 0;
-		for(int sum= 0; sum<scores.length; sum++) {
-			resultKor += scores[sum].getIntKor(); 
-		}
 		int resultEng = 0;
-		for(int sum= 0; sum<scores.length; sum++) {
-			resultEng += scores[sum].getIntEng(); 
-		}
 		int resultMath = 0;
-		for(int sum= 0; sum<scores.length; sum++) {
-			resultMath += scores[sum].getIntMath(); 
-		}
 		int result= 0;
-		for(int sum= 0; sum<scores.length; sum++) {
-			result += scores[sum].getIntSum(); 
-		}
 		float resultAvg = 0f;
 		for(int sum= 0; sum<scores.length; sum++) {
+			resultKor += scores[sum].getIntKor(); 
+			resultEng += scores[sum].getIntEng(); 
+			resultMath += scores[sum].getIntMath(); 
+			result += scores[sum].getIntSum(); 
 			resultAvg += scores[sum].getfAvg(); 
 		}
 		
