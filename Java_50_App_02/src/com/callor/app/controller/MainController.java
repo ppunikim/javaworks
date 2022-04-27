@@ -29,7 +29,7 @@ public class MainController {
 			}
 			//end if, else if
 		}//end while
-		System.out.println("끝끝끄타~~~~");
+		System.out.println("끝끝 집가자~~~~");
 	}//end main
 
 }

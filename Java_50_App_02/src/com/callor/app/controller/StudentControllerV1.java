@@ -48,6 +48,7 @@ public class StudentControllerV1 {
 				List<StudentVO> stList = stService.getStudents();
 				if(stList.size() < 1 ) {
 					System.out.println("학생정보 파일을 먼저 로딩하세요.");
+					System.out.println();
 					continue;
 				}
 				System.out.println(Line.dLine(50));
@@ -61,7 +62,8 @@ public class StudentControllerV1 {
 					System.out.println(vo.getIntGrade() + "\t");
 					System.out.println(vo.getStTel() + "\t");
 					System.out.println(vo.getStAddr());
-				}
+					System.out.println();
+				}//end for
 
 			
 			} else if (intKey == 3) {
