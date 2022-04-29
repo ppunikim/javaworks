@@ -1,34 +1,23 @@
 package com.callor.app.exec;
 
 public class Exec21 {
+	/* 예제문제.
+	 * 급여를 현금으로 지급하는 것.
+	 * 
+	 * 대한민국 화폐단위는 %5, %2 로 반복되어있다.
+	 */
 	public static void main(String[] args) {
 
-		/*
-		int fiveMan = 50_000;
-		int oneMan = 10_000;
-		int fiveChun = 5_000;
-		int oneChun = 1_000;
-		int fiveBack = 500;
-		int oneBack = 100;
-		int fiveSiv = 50;
-		int oneSiv = 10;
-		이것들은 %5와 %2로 반복돼있다.
-		*/
-		
+				
 		int intMoney = 555_550;
 		System.out.println("처음 돈은 " + intMoney +" 원이다.");
 
-		if(  intMoney % 5 == 0 ) {
-			int intAll = intMoney / 5;
-			intMoney -= intAll;
-			System.out.println(intMoney);
-		} else if( intMoney % 2 == 0) {
-			int intAll = intMoney / 2;
-			intMoney -= intAll;
-			System.out.println(intMoney);
-		} else {
-			System.out.println("나올 수 없다.");
-		}
+		int paper = (intMoney / 50000 );
+		System.out.println("5만원 권 개수: " + paper);
+		intMoney -= paper* 50000;
+		
+		//이 것을 10원까지 반복하면 만들어진다.
+		//하지만 반복되므로, 다음장에서 리뷰한다.
 		
 	}//end main
 }
