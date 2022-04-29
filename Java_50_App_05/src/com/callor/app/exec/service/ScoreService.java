@@ -7,10 +7,17 @@ import com.callor.app.exec.model.ScoreVO;
 
 public class ScoreService {
 	
-	List<ScoreVO> intScore = new ArrayList<>(); 
+	private List<ScoreVO> stList;
+	public ScoreService() {
+		scList = new ArrayList<>();
+	}
+	
 	
 	public void makeScore() {
-		
+		for(int i = 0; i < 20; i ++) {
+			ScoreVO scVO = new ScoreVO();
+			
+		}
 		
 		
 	}

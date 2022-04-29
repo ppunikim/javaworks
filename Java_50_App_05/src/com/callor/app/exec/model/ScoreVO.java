@@ -1,19 +1,20 @@
 package com.callor.app.exec.model;
 
 public class ScoreVO {
-	
+	private int stNum = 0;
 	private int intKor = 0;
 	private int intEng = 0;
 	private int intMath = 0;
 	
 	
-	
-	public ScoreVO(int intKor, int intEng, int intMath) {
-		super();
-		this.intKor = intKor;
-		this.intEng = intEng;
-		this.intMath = intMath;
+	public int getStNum() {
+		return stNum;
 	}
+
+	public void setStNum(int stNum) {
+		this.stNum = stNum;
+	}
+
 	public int getIntKor() {
 		return intKor;
 	}
@@ -34,9 +35,7 @@ public class ScoreVO {
 	}
 	@Override
 	public String toString() {
-		return "StudentVO [intKor=" + intKor + ", intEng=" + intEng + ", intMath=" + intMath + ", getIntKor()="
-				+ getIntKor() + ", getIntEng()=" + getIntEng() + ", getIntMath()=" + getIntMath() + ", getClass()="
-				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+		return "ScoreVO [stNum=" + stNum + ", intKor=" + intKor + ", intEng=" + intEng + ", intMath=" + intMath + "]";
 	}
 	
 	
