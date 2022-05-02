@@ -8,11 +8,22 @@ import com.callor.app.exec.service.ScoreService;
 
 public class ScoreServiceImplV2 implements ScoreService{
 	
-	private final List<ScoreVO> scList;
+	protected int stCount;
+	protected final List<ScoreVO> scList;
+	
+	protected final int linelength = 50;
+	protected final String[] subs;
+	
 	public ScoreServiceImplV2() {
 		scList = new ArrayList<>();
+		stCount = 20;
+		subs = new String[] { "학번","국어","영어","수학","총점","평균"  };
 	}
 	
+	private int getScore() {
+		int score = (int)(Math.random() * 50) + 51;
+		return score;
+	}
 	
 	@Override
 	public void makeScore() {
