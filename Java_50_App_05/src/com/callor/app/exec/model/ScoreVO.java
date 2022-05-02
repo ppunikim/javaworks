@@ -17,6 +17,7 @@ public class ScoreVO {
 	// 0으로 초기화하지 않아도 자동으로 된다.
 	
 	public int getIntSum() {
+		intSum = intKor + intEng + intMath;
 		return intSum;
 	}
 
@@ -25,7 +26,7 @@ public class ScoreVO {
 	}
 
 	public float getfAvg() {
-		return fAvg;
+		return fAvg = (float)intSum / 3;
 	}
 
 	public void setfAvg(float fAvg) {
@@ -68,7 +69,13 @@ public class ScoreVO {
 	}
 	@Override
 	public String toString() {
-		return "ScoreVO [stNum=" + stNum + ", intKor=" + intKor + ", intEng=" + intEng + ", intMath=" + intMath + "]";
+		String scStr = String.format("%5d\t", stNum);
+		scStr += String.format("%5d\t",intKor);
+		scStr += String.format("%5d\t",intEng);
+		scStr += String.format("%5d\t",intMath);
+		scStr += String.format("%5d\t",getIntSum());
+		scStr += String.format("%5.2f\n",getfAvg());
+		return scStr;
 	}
 	
 	
