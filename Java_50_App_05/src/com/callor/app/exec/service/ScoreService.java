@@ -1,27 +1,17 @@
 package com.callor.app.exec.service;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import com.callor.app.exec.model.ScoreVO;
+/*
+ * 인터페이스를 선언하여 
+ * 학생점수 생성 makeScore()
+ * 성적리스트 출력 printScore()
+ * 메서드 정의하기
+ */
+public interface ScoreService {
 
-public class ScoreService {
 	
-	private List<ScoreVO> stList;
-	public ScoreService() {
-		scList = new ArrayList<>();
-	}
-	
-	
-	public void makeScore() {
-		for(int i = 0; i < 20; i ++) {
-			ScoreVO scVO = new ScoreVO();
-			
-		}
-		
-		
-	}
-	
+	public void makeScore();	
+	public void printScore();	
 	
 	
 
