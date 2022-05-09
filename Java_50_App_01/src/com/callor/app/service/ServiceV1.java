@@ -24,8 +24,6 @@ public class ServiceV1 {
 		num = 0; // final로 선언된 변수는 반드시 생성자에서 초기화 해야한다.
 	}//end 기본생성자
 	
-	
-	
 	public void makeScore() {
 		for(int i=0; i< 10 ; i++) {
 			int rnd = (int)(Math.random()*100)+1;

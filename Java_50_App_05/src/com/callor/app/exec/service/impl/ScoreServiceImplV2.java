@@ -9,6 +9,11 @@ import com.callor.app.exec.utils.Line;
 
 public class ScoreServiceImplV2 implements ScoreService{
 	
+	/*
+	 * protected는 상속해주기 위해 설계된 클래스에서
+	 * 상속받은 클래스와 변수를 공유하기 위한 방법,
+	 * 기본 속성은 private와 같다.
+	 */
 	protected int stCount;
 	protected final List<ScoreVO> scList;
 	

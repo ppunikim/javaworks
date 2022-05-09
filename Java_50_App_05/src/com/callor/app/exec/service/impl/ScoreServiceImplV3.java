@@ -5,6 +5,10 @@ import com.callor.app.exec.utils.Line;
 
 public class ScoreServiceImplV3 extends ScoreServiceImplV2{
 	
+	/*
+	 * V2 클래스를 상속받는 순간
+	 * makeScore(), printScore() method를 기본으로 사용할 수 있다.
+	 */
 	public ScoreServiceImplV3() {
 		/* super() method
 		 * 상속받은(V2) 클래스의 기본 생성자를 호출하여

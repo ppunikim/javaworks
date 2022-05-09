@@ -4,6 +4,7 @@ import java.util.List;
 
 public class ServiceV2 {
 	private final List<Integer> intList;
+	
 	// intList를 직접 초기화하지 않고, 
 	// ServiceV2를 사용하는 곳에서 주입하기.
 	public ServiceV2(List<Integer> intList) {

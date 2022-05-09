@@ -24,13 +24,24 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1{
 			for(index = 0; index < strSubject.length; index ++ ) {
 				intScore[index] = getScore(strSubject[index]);
 				if(intScore[index] == null) {
+					/*
+					 * 만약 index 값이 0이라면 "국어점수" 입력하면이 나타난다.
+					 * 점수를 숫자로 입력하지 않고 Enter만 누르거나 다른 문자열이 섞이면
+					 * "국어 점수는 점수만 입력" 메세지를 보여주고 null을 return 한다.
+					 * 그러면 index 값을 1 감소시켜 -1로 만든 후 다시 for() 처음으로 돌아간다.
+					 * for(index = -1 , ...) {} 가 다시 실행 되는데,
+					 * for( ; ; index++) 에 의해 index는 다시 0이 된다.
+					 * 그러면 국어점수를 입력하는 화면이 다시 나타날 것이다.
+					 */
 					index --;   // 입력값이 없으면 다시 돌아가는 코드로, 포인트 코드이다.
 					continue;
 				}//end 두번째 if
+				//for() 반복문 중단하기
 				if(intScore[index] < 0 ) break;
 			}//end for
 			
 			if(index < strSubject.length) {
+				//while() 반복문 중단하기
 				break;
 			}
 			
@@ -62,6 +73,11 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1{
 		
 	}// inputScore override하기
 	
+	/*
+	 * 정수 점수를 정확히 입력했으면 점수를 return 하고
+	 * 만약 exception이 발생하면 null return 
+	 * 종료(QUIT) 입력하면 -1 을 return 한다.
+	 */
 	private Integer getScore(String title) {
 		System.out.printf("%s 점수입력(QUIT : 종료) >> ", title);
 		String score = scan.nextLine();

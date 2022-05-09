@@ -9,6 +9,7 @@ import com.callor.app.model.ScoreVO;
 public class ScoreServiceImplV4 extends ScoreServiceImplV3 {
 
 	public ScoreServiceImplV4() {
+		//상속받은 ScoreServiceImplV1 클래스의 기본생성자 호출
 		super();
 	}
 

@@ -26,7 +26,8 @@ public class ScoreVO {
 	
 	/*필드 변수와 관계없이 총점을 계산하여
 	return 하는 method 정의하기.
-	객체지향에서 이러한 별개의 method를 메세지 라고 한다.
+	객체지향에서 이러한 별개의 method를 메세지(또는 객체의 행위) 라고 한다.
+	VO.getIntSum() method를 호출하면 3과목 합계점수를 return 한다.
 	*/
 	public int getIntSum() {
 		int sum = stKor + stEng + stMath;

@@ -27,8 +27,8 @@ public class ListEx1 {
 		 * Generic 으로 설정할 수 있는 type은 
 		 * 반드시 class type이어야 한다.
 		 * primitive(기본) type은 Generic으로 설정할 수 없다. 
-		 *  primitive = 기본형으로 선언한 변수들 즉, int num = 100;
-		 *  Generic = <> 로 돼있는 것들
+		 * primitive = 기본형으로 선언한 변수들 즉, int num = 100;
+		 * Generic = <> 로 돼있는 것들
 		 */
 		List<Float> floatList = new ArrayList<>();
 		
