@@ -12,7 +12,7 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1{
 	public void inputScore() {
 		
 		while(true) {
-			System.out.println("학생 이름 입력(QUIT : 종료) >> ");
+			System.out.print("학생 이름 입력(QUIT : 종료) >> ");
 			String stName = scan.nextLine();
 			if(stName.equals("QUIT")) {
 				break;
@@ -29,6 +29,10 @@ public class ScoreServiceImplV2 extends ScoreServiceImplV1{
 				}//end 두번째 if
 				if(intScore[index] < 0 ) break;
 			}//end for
+			
+			if(index < strSubject.length) {
+				break;
+			}
 			
 		/* Build 패턴 사용하기 위해 VO 객체 생성하면서 데이터 Setting 하기
 		 * 1. 생성자 키워드 new 사용하지 않음
