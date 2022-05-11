@@ -7,7 +7,7 @@ import com.callor.utils.Line;
 
 public class InputServiceImplV1 implements InputService{
 
-	private final Scanner scan; //입력받을 sanner 
+	protected final Scanner scan; //입력받을 sanner 
 	
 	public InputServiceImplV1() {
 		scan = new Scanner(System.in);
@@ -42,6 +42,13 @@ public class InputServiceImplV1 implements InputService{
 		System.out.print("할 일 >> ");
 		String content = scan.nextLine();
 		return content;
+	}
+
+
+	@Override
+	public Integer selectTodo() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }//end class

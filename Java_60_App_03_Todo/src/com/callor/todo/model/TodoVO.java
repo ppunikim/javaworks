@@ -44,10 +44,8 @@ public class TodoVO {
 			compStr = "완료됨";
 		}
 */		
-		//result += String.format("%s",tContent);
-		
-		result += String.format("%s\t",eDate);
-		result += String.format("%s\t",eTime);
+		result += String.format("%s \t",tContent);
+		result += String.format("%s\n",compStr);
 		
 		return result;
 		

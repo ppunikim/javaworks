@@ -55,7 +55,7 @@ public class TodoServiceImplV1 implements TodoService{
 		UUID uuid = UUID.randomUUID();  // 고유한 번호를 랜덤으로 만들어준다.
 		String idStr = uuid.toString(); // 문자로 된 key를 만들어준다.
 		
-		TodoVO tVO = TodoVO.builder().tKey(idStr).sDate(today).sTime(time).tContent(content).build();
+		TodoVO tVO = TodoVO.builder().tKey(idStr).sDate(today).sTime(time).tConbtent(content).build();
 		todoList.add(tVO);
 		
 	}//end todoInsert
@@ -83,6 +83,40 @@ public class TodoServiceImplV1 implements TodoService{
 		// TODO Auto-generated method stub
 		
 	}
+
+
+	
+	// TODO 완료하기
+	/* 매개변수로 전달받은 num 값은 List 요소의 실제 값보다 1만큼 크다
+	 * num 값이 4라면 실제로 3번 요소를 선택한 것이다.
+	 * 
+	 * 이 것이 완료이다.
+	 * 선택한 요소의 edate, etime 부분을 현재 시스템의 날짜와 시간을 사용하여
+	 * 문자열로 바꾼 다음, setting하는 것이 과제. 끝나는 시간과 날짜를 나타나도록 적어라.
+	 * 날짜 시간 바꾸는 것은 insert(ServiceImplV1) 부분에 있다. 
+	 */
+	@Override
+	public void compTodo(Integer num) {
+		//컴퓨터의 현재 날짜, 시각을 읽어오기
+				Date endDate = new Date(System.currentTimeMillis());
+				
+				//Date 객체의 값을 날짜, 시각 문자열 타입으로 변경하기 위한 객체 생성
+				SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd"); // 날짜는 대문자 M
+				SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss"); // 시간은 소문자 m
+				
+				// 현재 날짜, 시간에 해당하는 문자열 생성하기.
+				// SimpleDateFormat에 의해 패턴대로 날짜, 시각, 문자열 만든다.
+				String etoday = dateFormat.format(endDate); //문자열을 읽어온다.
+				String etime = timeFormat.format(endDate); // 문자열을 읽어온다.
+				
+				for(int i = 0; i < num; i ++ ) {
+					while(true) {
+						
+					}
+					
+				}
+		
+	}//end comptodo
 	
 	
 
