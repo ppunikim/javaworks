@@ -4,14 +4,14 @@ public class Method_01 {
 
 	public static void main(String[] args) {
 		/*
-		 * num()를 실행하고 그 괄과를 console에 출력
+		 * num()를 실행하고 그 결과를 console에 출력
 		 * num() 는 main()와 같은 class내에 선언되어 있어야 한다.
 		 */
 		System.out.println( num() );
 		
 		/*
-		 * add()를 실행하고 그 괄과를 console에 출력
-		 * add() 는 main과 같은 class내에 선언되오 있어야 한다.
+		 * add()를 실행하고 그 결과를 console에 출력
+		 * add() 는 main과 같은 class내에 선언되어 있어야 한다.
 		 */
 		System.out.println( add() );
 		System.out.println(Math.random() );
@@ -21,8 +21,8 @@ public class Method_01 {
 	} //end main
 
 	/*
-	 * num nethod 선언
-	 * num() : num nethod 라고 읽는다.
+	 * num method 선언
+	 * num() : num method 라고 읽는다.
 	 * 		num()를 선언할 때는 public static int 키워드가 선행된다.
 	 * 		num() 의 이름은 변수 이름짓기 규칙과 동일하다.
 	 * 

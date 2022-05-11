@@ -5,7 +5,7 @@ public class Var_01 {
        public static void main(String[] args) {
 	
 	
-		int intNum1 = (int)(Math.random() * 1000) + 1;
+		int intNum1 = (int)(Math.random() * 1000) + 1; // 0~0.999 -> 0~9999.999 -> 1~10000.999 -> 1~10000
 		int intNum2 = (int)(Math.random() * 1000) + 1;
 		
 			System.out.printf("\t intNum1: %d\n", intNum1);

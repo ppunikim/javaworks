@@ -26,7 +26,7 @@ public class Method_02A {
 		
 		String strNation = null;
 		return null;
-	}
+	}// return type이 문자열인 nation method를 선언했다.
 
 	public static boolean bYes() {
 		boolean bYes = false;
