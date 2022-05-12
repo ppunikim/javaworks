@@ -70,7 +70,7 @@ public class TodoControllerV12 {
 			System.out.print(toVO.get(i).getSTime() + "\t");
 			System.out.print(toVO.get(i).getTContent() + "\t");
 
-			String comp = toVO.get(i).getEDate() == null || toVO.get(i).getEDate().isBlank()
+			String comp = toVO.get(i).getEDate() == null || toVO.get(i).getEDate().isBlank() 
 					?"진행중 ": "완료됨";
 			System.out.println(comp);
 		}
