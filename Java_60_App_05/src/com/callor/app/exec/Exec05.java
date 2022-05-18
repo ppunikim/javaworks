@@ -11,16 +11,16 @@ public class Exec05 {
 		List<AddressVO> addrs = new ArrayList<>();
 		AddressVO aVO = new AddressVO();
 		
-		aVO.setName("Jam");
+		aVO.setName("나");
 		aVO.setAge(30);
 		addrs.add(aVO);
 		
-		addrs.add(AddressVO.builder().name("Apple").age(1000000000).build());
-		addrs.add(AddressVO.builder().name("Horse").age(5000).build());
+		addrs.add(AddressVO.builder().name("라").age(1000000000).build());
+		addrs.add(AddressVO.builder().name("마").age(5000).build());
 		addrs.add(new AddressVO());	
 
 		int size = addrs.size(); 	
-		addrs.get(size - 1).setName("Sunny");	
+		addrs.get(size - 1).setName("가");	
 		addrs.get(size - 1).setAge(1);
 		
 		for(AddressVO VO : addrs) {
